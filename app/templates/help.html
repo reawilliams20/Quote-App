@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    body {
+      background-image: url('/static/22.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+</style>
+<div class="d-flex justify-content-center">
+  <div class="card" style="width: 34rem;">
+    <center><img src="/static/help.png" max-width="110" height="160" alt="Card image cap"></center>
+    <div class="card-body">
+        <h5 class="card-title">Help</h5>
+        <p class="card-text"> To generate a quote go to the homepage, enter in your goal and a keyword relating
+          to your goal, then click on one of the AI (Artificial Intelligence) buttons at the bottom of the form. Participants in the study are required to use this application twice a day (for each AI) for
+          5 days. For example you may choose to use AI 1 in the morning then AI 2 in the afternoon. But you must not select the same AI twice.
+        </p>
+        <p class="card-text">Once your quote has been generated set a timer for 20 minutes (DO NOT CLOSE THE PAGE, keep the tab open whilst completing other tasks). Once the 20 minutes are up
+          navigate back to the app and click on the "Go to Questionnaire" button at the bottom of the page and answer the questions in the questionnaire.
+          Users also have the option to set an alert which would notify you every 10 minutes on your goal and quote. 
+          You also have the option to generate another quote if you're not satisfied with the current one.
+        </p>
+        <a href="/" class="btn btn-primary">Home</a>
+      </div>
+  </div>
+</div>
+
+<br>
+
+<div class="d-flex justify-content-center">
+  <div class="card" style="width: 34rem;">
+    <div class="card-body">
+        <h5 class="card-title">At the end of your participation</h5>
+        <p class="card-text"> please complete the questionnaire 
+          (via clicking the "Final Questionnaire" button below)
+        </p>
+        <input type="button" class="btn btn-warning" style="font-size: 18px;" onclick="window.open('https://forms.gle/CPnbSFqdawP7vHyP7','_blank')" value="Final Questionnaire" />
+      </div>
+  </div>
+</div>
+<br>
+
+
+{% endblock %}

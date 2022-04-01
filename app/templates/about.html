@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    body {
+      background-image: url('/static/22.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+</style>
+
+<div class="d-flex justify-content-center">
+<div class="card" style="width: 34rem;">
+  <center><img src="/static/about.png" max-width="110" height="160" alt="Card image cap"></center>
+  <div class="card-body">
+    <h5 class="card-title">About</h5>
+    <p class="card-text"> There are many benefits to motivational quotes. These include putting people in the right frame of mind,
+      helping them become more optimistic and more driven. Motivational quotes have been passed down generations for centuries
+      and new ones are continuously being added to that list. Most common motivational quotes are spoken by historical figures
+      which serve as inspiration for others</p>
+    <p class="card-text">This app is used to study the importance of tailored quotes to help motivation. 
+      Users can generate a quote based on a keyword relating to their goal. As this is used for a study the application will not
+    hold a large amount of quotes at the moment.</p>
+    <a href="/" class="btn btn-primary">Get started!</a>
+  </div>
+</div>
+</div>
+
+{% endblock %}
+
