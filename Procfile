@@ -1,1 +1,1 @@
-web: gunicorn Quote-App.wsgi
+web: gunicorn motiv-quote-app.wsgi
